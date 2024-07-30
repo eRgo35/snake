@@ -9,6 +9,6 @@ use clap::Parser;
     long_about = None
 )]
 pub struct Args {
-    #[arg(long, default_value_t = 60)]
-    pub fps: usize,
+    #[arg(long, default_value_t = 120)]
+    pub tps: usize,
 }

@@ -5,16 +5,14 @@ pub struct Snake {
     pub(crate) position: Point2<f32>,
     pub(crate) rotation: Rotation2<f32>,
     pub(crate) speed: f32,
-    pub(crate) size: f32,
 }
 
 impl Snake {
-    pub fn new(position: Point2<f32>, rotation: f32, speed: f32) -> Self {
+    pub fn new(position: Point2<f32>, rotation: Rotation2<f32>, speed: f32) -> Self {
         Self {
             position,
-            rotation: Rotation2::new(rotation),
+            rotation,
             speed,
-            size: 1.0,
         }
     }
 
@@ -30,7 +28,4 @@ impl Snake {
         self.speed
     }
 
-    pub fn size(&self) -> f32 {
-        self.size
-    }
 }
