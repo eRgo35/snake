@@ -1,0 +1,12 @@
+[package]
+name = "snake"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.11", features = ["derive"] }
+clearscreen = "3.0.0"
+colored = "2.1.0"
+lib-snake-core = { path = "libs/snake-core" }
+nalgebra = "0.33.0"
+rand = "0.8.5"
